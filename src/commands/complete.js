@@ -4,6 +4,9 @@
 // Imports
 import chalk from 'chalk';
 
+// Consts
+const _1 = 1;
+
 /**
  * Completes an existing 'todo' item
  * @param {object} Low db object used to save the new todo
@@ -19,15 +22,13 @@ export async function completeTodo(db, index) {
 	}
 	const todo_index = Number.parseInt(index);
 	const todo_count = db.data.todos.length;
-	if (todo_index > todo_count || todo_index < 1) {
+	if (todo_index > todo_count || todo_index < _1) {
 		throw new Error(`Index provided invalid - ${todo_index}`);
 	}
 
 	// Set the specified todo
-	const todo = db.data.todos[todo_index - 1];
+	const todo = db.data.todos[todo_index - _1];
 	todo.complete = true;
 	await db.write();
-	console.log(
-		chalk.green(`todo ${todo_index}. \"${todo.title}\" completed.`)
-	);
+	console.log(chalk.green(`todo ${todo_index}. "${todo.title}" completed.`));
 }
