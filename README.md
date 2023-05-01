@@ -29,3 +29,9 @@ where `<index>` is the number of the todo returned from a call to `todo get`
 ```bash
 todo help
 ```
+
+## STEMatch registry
+
+The following people have cloned this repo and gotten todo running:
+
+-   Kent Welch
