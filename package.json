@@ -1,0 +1,42 @@
+{
+	"name": "todo",
+	"version": "0.1.0",
+	"description": "A simple JavaScript project copied from the todo example on DigitalOcean: https://www.digitalocean.com/community/tutorials/how-to-build-command-line-applications-with-node-js",
+	"main": "src/todo.js",
+	"scripts": {
+		"prettier": "prettier --write .",
+		"test": "eslint ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kwelch2015/todo.git"
+	},
+	"keywords": [
+		"demo",
+		"todo"
+	],
+	"type": "module",
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/kwelch2015/todo/issues"
+	},
+	"homepage": "https://github.com/kwelch2015/todo#readme",
+	"prettier": {
+		"singleQuote": true,
+		"tabWidth": 4,
+		"semi": true,
+		"useTabs": true,
+		"endOfLine": "auto",
+		"trailingComma": "none",
+		"embeddedLanguageFormatting": "off"
+	},
+	"dependencies": {
+		"chalk": "^5.2.0",
+		"lowdb": "^6.0.1"
+	},
+	"devDependencies": {
+		"eslint": "^8.39.0",
+		"prettier": "^2.8.8"
+	}
+}
