@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+// Main todo program file
 'use strict;';
 
 // Imports
