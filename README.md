@@ -35,3 +35,4 @@ todo help
 The following people have cloned this repo and gotten todo running:
 
 -   Kent Welch
+-   Test User
