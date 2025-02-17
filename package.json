@@ -5,7 +5,9 @@
 	"main": "src/todo.js",
 	"scripts": {
 		"prettier": "prettier --write .",
-		"test": "eslint ."
+		"test": "eslint .",
+		"build": "npm run prettier && npm run test",
+		"start": "node src/todo.js"
 	},
 	"repository": {
 		"type": "git",
